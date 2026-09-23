@@ -34,7 +34,7 @@ export default function ArchitectureDiagram({
             initial={{ opacity: 0, y: isHorizontal ? 0 : 12, x: isHorizontal ? 12 : 0 }}
             animate={isInView ? { opacity: 1, y: 0, x: 0 } : {}}
             transition={{ duration: 0.5, delay: index * 0.12, ease: "easeOut" }}
-            className="relative rounded-lg border border-white/10 bg-card px-4 py-2.5 text-sm text-ink whitespace-nowrap shadow-[0_0_0_1px_rgba(255,255,255,0.02)]"
+            className="relative card-glow rounded-lg border border-white/10 px-4 py-2.5 text-sm text-ink whitespace-nowrap shadow-[0_0_24px_-10px_rgba(34,211,238,0.8)]"
             style={{
               boxShadow: "0 0 24px -8px rgba(91,140,255,0.25)",
             }}

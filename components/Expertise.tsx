@@ -11,7 +11,7 @@ export default function Expertise() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-80px" }}
         transition={{ duration: 0.5 }}
-        className="font-mono text-sm text-accent-blue"
+        className="section-label"
       >
         Core Expertise
       </motion.p>
@@ -20,7 +20,7 @@ export default function Expertise() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-80px" }}
         transition={{ duration: 0.5, delay: 0.05 }}
-        className="mt-3 max-w-2xl text-3xl font-semibold tracking-tight text-ink sm:text-4xl"
+        className="mt-3 max-w-2xl text-3xl font-semibold tracking-tight text-gradient-anim sm:text-4xl"
       >
         Capability across the full AI stack
       </motion.h2>
@@ -33,7 +33,7 @@ export default function Expertise() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-60px" }}
             transition={{ duration: 0.5, delay: (i % 2) * 0.08 }}
-            className="group rounded-xl border border-white/10 bg-card p-7 transition-colors hover:border-accent-blue/30"
+            className="group card-glow rounded-xl border border-white/10 bg-card p-7 transition-all"
           >
             <h3 className="text-lg font-semibold text-ink">{block.title}</h3>
             <p className="mt-3 text-sm leading-relaxed text-ink-muted">{block.description}</p>
@@ -41,7 +41,7 @@ export default function Expertise() {
               {block.keywords.map((kw) => (
                 <span
                   key={kw}
-                  className="rounded-md border border-white/10 bg-white/[0.03] px-2.5 py-1 text-xs text-ink-muted"
+                  className="chip rounded-md border px-2.5 py-1 text-xs"
                 >
                   {kw}
                 </span>

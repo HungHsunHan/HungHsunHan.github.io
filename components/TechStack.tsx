@@ -11,7 +11,7 @@ export default function TechStack() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-80px" }}
         transition={{ duration: 0.5 }}
-        className="font-mono text-sm text-accent-blue"
+        className="section-label"
       >
         Technical Stack
       </motion.p>
@@ -20,7 +20,7 @@ export default function TechStack() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-80px" }}
         transition={{ duration: 0.5, delay: 0.05 }}
-        className="mt-3 max-w-2xl text-3xl font-semibold tracking-tight text-ink sm:text-4xl"
+        className="mt-3 max-w-2xl text-3xl font-semibold tracking-tight text-gradient-anim sm:text-4xl"
       >
         Organized by architecture layer
       </motion.h2>
@@ -33,7 +33,7 @@ export default function TechStack() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-60px" }}
             transition={{ duration: 0.5, delay: (i % 3) * 0.08 }}
-            className="rounded-xl border border-white/10 bg-card p-6"
+            className="card-glow rounded-xl border border-white/10 bg-card p-6"
           >
             <h3 className="font-mono text-xs uppercase tracking-wide text-accent-blue">
               {layer.layer}
@@ -42,7 +42,7 @@ export default function TechStack() {
               {layer.items.map((item) => (
                 <span
                   key={item}
-                  className="rounded-md border border-white/10 bg-white/[0.03] px-2.5 py-1 text-xs text-ink-muted"
+                  className="chip rounded-md border px-2.5 py-1 text-xs"
                 >
                   {item}
                 </span>

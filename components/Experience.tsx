@@ -11,7 +11,7 @@ export default function Experience() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-80px" }}
         transition={{ duration: 0.5 }}
-        className="font-mono text-sm text-accent-blue"
+        className="section-label"
       >
         Experience
       </motion.p>
@@ -20,7 +20,7 @@ export default function Experience() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-80px" }}
         transition={{ duration: 0.5, delay: 0.05 }}
-        className="mt-3 max-w-2xl text-3xl font-semibold tracking-tight text-ink sm:text-4xl"
+        className="mt-3 max-w-2xl text-3xl font-semibold tracking-tight text-gradient-anim sm:text-4xl"
       >
         Where the work happened
       </motion.h2>
@@ -51,7 +51,7 @@ export default function Experience() {
               {entry.focus.map((f) => (
                 <span
                   key={f}
-                  className="rounded-md border border-white/10 bg-white/[0.03] px-2.5 py-1 text-xs text-ink-muted"
+                  className="chip rounded-md border px-2.5 py-1 text-xs"
                 >
                   {f}
                 </span>

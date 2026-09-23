@@ -14,10 +14,12 @@ import EngineeringPrinciples from "@/components/EngineeringPrinciples";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import CursorSpotlight from "@/components/CursorSpotlight";
+import AuroraBackground from "@/components/AuroraBackground";
 
 export default function Home() {
   return (
     <>
+      <AuroraBackground />
       <CursorSpotlight />
       <Navbar />
       <main className="relative z-10">

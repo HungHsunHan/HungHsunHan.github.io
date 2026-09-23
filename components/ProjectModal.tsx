@@ -107,7 +107,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
                 {project.tech.map((t) => (
                   <span
                     key={t}
-                    className="rounded-md border border-white/10 bg-white/[0.03] px-2.5 py-1 text-xs text-ink-muted"
+                    className="chip rounded-md border px-2.5 py-1 text-xs"
                   >
                     {t}
                   </span>
