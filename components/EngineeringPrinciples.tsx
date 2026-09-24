@@ -11,7 +11,7 @@ export default function EngineeringPrinciples() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-80px" }}
         transition={{ duration: 0.5 }}
-        className="font-mono text-sm text-accent-blue"
+        className="section-label"
       >
         Personal Engineering Principles
       </motion.p>
@@ -20,7 +20,7 @@ export default function EngineeringPrinciples() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-80px" }}
         transition={{ duration: 0.5, delay: 0.05 }}
-        className="mt-3 max-w-2xl text-3xl font-semibold tracking-tight text-ink sm:text-4xl"
+        className="mt-3 max-w-2xl text-3xl font-semibold tracking-tight text-gradient-anim sm:text-4xl"
       >
         How I think about this work
       </motion.h2>
@@ -33,7 +33,7 @@ export default function EngineeringPrinciples() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-60px" }}
             transition={{ duration: 0.5, delay: i * 0.08 }}
-            className="rounded-xl border border-white/10 bg-card p-6"
+            className="card-glow rounded-xl border border-white/10 bg-card p-6"
           >
             <div className="mb-4 h-px w-6 bg-gradient-to-r from-accent-blue to-accent-cyan" />
             <h3 className="text-base font-semibold text-ink">{p.title}</h3>

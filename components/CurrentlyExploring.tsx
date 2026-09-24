@@ -11,7 +11,7 @@ export default function CurrentlyExploring() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-80px" }}
         transition={{ duration: 0.5 }}
-        className="font-mono text-sm text-accent-blue"
+        className="section-label"
       >
         Currently Exploring
       </motion.p>
@@ -20,7 +20,7 @@ export default function CurrentlyExploring() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-80px" }}
         transition={{ duration: 0.5, delay: 0.05 }}
-        className="mt-3 max-w-2xl text-3xl font-semibold tracking-tight text-ink sm:text-4xl"
+        className="mt-3 max-w-2xl text-3xl font-semibold tracking-tight text-gradient-anim sm:text-4xl"
       >
         What&apos;s next on my radar
       </motion.h2>
@@ -33,7 +33,7 @@ export default function CurrentlyExploring() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-60px" }}
             transition={{ duration: 0.5, delay: (i % 3) * 0.08 }}
-            className="relative overflow-hidden rounded-xl border border-white/10 bg-card p-6"
+            className="relative overflow-hidden card-glow rounded-xl border border-white/10 bg-card p-6"
           >
             <span className="absolute right-4 top-4 h-1.5 w-1.5 rounded-full bg-accent-cyan animate-pulse" />
             <h3 className="text-base font-semibold text-ink">{item.title}</h3>

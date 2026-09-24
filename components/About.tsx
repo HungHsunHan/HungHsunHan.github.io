@@ -19,7 +19,7 @@ export default function About() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-80px" }}
         transition={{ duration: 0.5 }}
-        className="font-mono text-sm text-accent-blue"
+        className="section-label"
       >
         About
       </motion.p>
@@ -28,7 +28,7 @@ export default function About() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-80px" }}
         transition={{ duration: 0.5, delay: 0.05 }}
-        className="mt-3 max-w-2xl text-3xl font-semibold tracking-tight text-ink sm:text-4xl"
+        className="mt-3 max-w-2xl text-3xl font-semibold tracking-tight text-gradient-anim sm:text-4xl"
       >
         Building AI that works beyond the demo
       </motion.h2>
@@ -54,7 +54,7 @@ export default function About() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-60px" }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="flex flex-col justify-center gap-4 rounded-xl border border-white/10 bg-card p-8"
+          className="flex flex-col justify-center gap-4 card-glow rounded-xl border border-white/10 bg-card p-8"
         >
           <p className="text-lg text-ink-muted">I particularly enjoy solving the gap between:</p>
           <p className="text-xl font-medium text-ink">&ldquo;The AI demo works.&rdquo;</p>

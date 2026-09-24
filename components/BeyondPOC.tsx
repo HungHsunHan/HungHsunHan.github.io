@@ -24,7 +24,7 @@ export default function BeyondPOC() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-80px" }}
         transition={{ duration: 0.5 }}
-        className="font-mono text-sm text-accent-blue"
+        className="section-label"
       >
         Production Engineering Philosophy
       </motion.p>
@@ -33,7 +33,7 @@ export default function BeyondPOC() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-80px" }}
         transition={{ duration: 0.5, delay: 0.05 }}
-        className="mt-3 max-w-2xl text-3xl font-semibold tracking-tight text-ink sm:text-4xl"
+        className="mt-3 max-w-2xl text-3xl font-semibold tracking-tight text-gradient-anim sm:text-4xl"
       >
         Beyond the POC
       </motion.h2>
@@ -53,7 +53,7 @@ export default function BeyondPOC() {
           </p>
         </div>
 
-        <div className="rounded-xl border border-white/10 bg-card p-8">
+        <div className="card-glow rounded-xl border border-white/10 bg-card p-8">
           <ArchitectureDiagram nodes={["POC"]} direction="vertical" className="mb-1" />
           <div className="my-1 ml-[15px] h-6 w-px bg-gradient-to-b from-accent-blue to-accent-cyan/40" />
           <div className="grid grid-cols-2 gap-2 sm:grid-cols-2">

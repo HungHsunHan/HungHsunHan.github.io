@@ -18,7 +18,7 @@ export default function ProjectCard({ project, index, onOpen }: ProjectCardProps
       viewport={{ once: true, margin: "-60px" }}
       transition={{ duration: 0.5, delay: (index % 2) * 0.08 }}
       whileHover={{ y: -4 }}
-      className="group flex flex-col rounded-xl border border-white/10 bg-card p-7 transition-colors hover:border-accent-blue/30"
+      className="group flex flex-col card-glow rounded-xl border border-white/10 bg-card p-7 transition-all"
     >
       <span className="font-mono text-xs text-accent-blue">{project.tag}</span>
       <h3 className="mt-3 text-xl font-semibold text-ink">{project.title}</h3>
@@ -28,7 +28,7 @@ export default function ProjectCard({ project, index, onOpen }: ProjectCardProps
         {project.tech.map((t) => (
           <span
             key={t}
-            className="rounded-md border border-white/10 bg-white/[0.03] px-2.5 py-1 text-xs text-ink-muted"
+            className="chip rounded-md border px-2.5 py-1 text-xs"
           >
             {t}
           </span>

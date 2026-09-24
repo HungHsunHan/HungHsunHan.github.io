@@ -21,7 +21,7 @@ export default function Contact() {
           }}
         />
         <div className="relative">
-          <h2 className="text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
+          <h2 className="text-3xl font-semibold tracking-tight text-gradient-anim sm:text-4xl">
             Let&apos;s build something useful with AI.
           </h2>
           <p className="mx-auto mt-5 max-w-xl leading-relaxed text-ink-muted">
