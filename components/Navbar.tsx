@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { Github, Linkedin } from "lucide-react";
+import ThreadsIcon from "./ThreadsIcon";
 
 const navLinks = [
   { label: "About", href: "#about" },
@@ -50,7 +51,7 @@ export default function Navbar() {
 
         <div className="flex items-center gap-4">
           <a
-            href="https://github.com/hunghsun"
+            href="https://github.com/HungHsunHan"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
@@ -59,13 +60,22 @@ export default function Navbar() {
             <Github size={18} />
           </a>
           <a
-            href="https://www.linkedin.com/in/hunghsun"
+            href="https://www.linkedin.com/in/hung-hsun-han/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
             className="text-ink-muted hover:text-ink transition-colors"
           >
             <Linkedin size={18} />
+          </a>
+          <a
+            href="https://www.threads.net/tripleh.ai"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Threads"
+            className="text-ink-muted hover:text-ink transition-colors"
+          >
+            <ThreadsIcon size={18} />
           </a>
         </div>
       </nav>

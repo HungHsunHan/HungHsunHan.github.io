@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Github, Linkedin, Mail } from "lucide-react";
+import ThreadsIcon from "./ThreadsIcon";
 
 export default function Contact() {
   return (
@@ -31,7 +32,7 @@ export default function Contact() {
 
           <div className="mt-9 flex flex-wrap items-center justify-center gap-4">
             <a
-              href="https://www.linkedin.com/in/hunghsun"
+              href="https://www.linkedin.com/in/hung-hsun-han/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-lg border border-white/15 px-5 py-3 text-sm font-medium text-ink transition-colors hover:border-white/30 hover:bg-white/5"
@@ -40,13 +41,22 @@ export default function Contact() {
               LinkedIn
             </a>
             <a
-              href="https://github.com/hunghsun"
+              href="https://github.com/HungHsunHan"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-lg border border-white/15 px-5 py-3 text-sm font-medium text-ink transition-colors hover:border-white/30 hover:bg-white/5"
             >
               <Github size={16} />
               GitHub
+            </a>
+            <a
+              href="https://www.threads.net/tripleh.ai"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-lg border border-white/15 px-5 py-3 text-sm font-medium text-ink transition-colors hover:border-white/30 hover:bg-white/5"
+            >
+              <ThreadsIcon size={16} />
+              Threads
             </a>
             <a
               href="mailto:contact@hunghsun.dev"
