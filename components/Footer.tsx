@@ -1,4 +1,5 @@
 import { Github, Linkedin } from "lucide-react";
+import ThreadsIcon from "./ThreadsIcon";
 
 export default function Footer() {
   return (
@@ -13,7 +14,7 @@ export default function Footer() {
 
         <div className="flex items-center gap-4">
           <a
-            href="https://github.com/hunghsun"
+            href="https://github.com/HungHsunHan"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
@@ -22,13 +23,22 @@ export default function Footer() {
             <Github size={16} />
           </a>
           <a
-            href="https://www.linkedin.com/in/hunghsun"
+            href="https://www.linkedin.com/in/hung-hsun-han/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
             className="text-ink-muted transition-colors hover:text-ink"
           >
             <Linkedin size={16} />
+          </a>
+          <a
+            href="https://www.threads.net/tripleh.ai"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Threads"
+            className="text-ink-muted transition-colors hover:text-ink"
+          >
+            <ThreadsIcon size={16} />
           </a>
         </div>
       </div>

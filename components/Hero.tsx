@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { Github, Linkedin, Mail } from "lucide-react";
+import ThreadsIcon from "./ThreadsIcon";
 import ArchitectureDiagram from "./ArchitectureDiagram";
 import Terminal from "./Terminal";
 
@@ -127,7 +128,7 @@ export default function Hero() {
 
           <div className="mt-8 flex items-center gap-5">
             <a
-              href="https://github.com/hunghsun"
+              href="https://github.com/HungHsunHan"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
@@ -136,13 +137,22 @@ export default function Hero() {
               <Github size={20} />
             </a>
             <a
-              href="https://www.linkedin.com/in/hunghsun"
+              href="https://www.linkedin.com/in/hung-hsun-han/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
               className="rounded-full border border-white/10 bg-white/5 p-2.5 text-ink-muted transition-all hover:-translate-y-1 hover:border-[#f472b6]/50 hover:text-[#f9a8d4] hover:shadow-[0_0_20px_-4px_rgba(244,114,182,0.7)]"
             >
               <Linkedin size={20} />
+            </a>
+            <a
+              href="https://www.threads.net/tripleh.ai"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Threads"
+              className="rounded-full border border-white/10 bg-white/5 p-2.5 text-ink-muted transition-all hover:-translate-y-1 hover:border-[#f472b6]/50 hover:text-[#f9a8d4] hover:shadow-[0_0_20px_-4px_rgba(244,114,182,0.7)]"
+            >
+              <ThreadsIcon size={20} />
             </a>
             <a
               href="mailto:contact@hunghsun.dev"
